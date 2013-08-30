@@ -1,0 +1,18 @@
+* lib_browser.ahk
+
+some browser commands for EWOW.
+
+** Usage
+
+Load this library
+
+: #Include lib_browser.ahk
+
+and bind keys.
+
+: #If !ignored_frame() && !cx
+: !q:: browser_backward()
+: !r:: browser_reflesh()
+: !]:: browser_forward()
+: !s:: browser_search()
+: !j:: browser_url()
